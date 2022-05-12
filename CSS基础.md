@@ -1416,4 +1416,155 @@ float:right;
 
 
 案例练习
+$$
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .inner{
+            width: 970px;
+            margin: 0 auto;
+        }
+        .inner .top{
+            height: 103px;
+            margin-bottom: 10px;
+        }
+        .inner .top .logo01{
+            height: 103px;
+            width: 277px;
+            background: red;
+            float: left;
+        }
+        .inner .top .logo02{
+            height: 103px;
+            width: 679px;
+            float: right;
+        }
+        .inner .top .logo02-1{
+            height: 49px;
+            width: 137px;
+            background: rgb(69, 184, 98);
+            margin-bottom: 8px;
+            float: right;
+        }
+        .inner .top .logo02-2{
+            height: 46px;
+            width: 679px;
+            background: rgb(69, 184, 98);
+            float: right;
+        }
+        .inner .middle{
+            height: 435px;
+            margin-bottom: 10px;
+        }
+        .inner .middle .middle01{
+            height: 435px;
+            width: 310px;
+            float: left;
+            background: orange;
+        }
+        .inner .middle .middle02{
+            height: 435px;
+            width: 650px;
+            float: left;
+            margin-left: 10px;
+        }
+        .inner .middle .middle02 .middle02-1{
+            height: 400px;
+            width: 650px;
+        }
+        .inner .middle .middle02 .middle02-1 .middle02-1-1{
+            width: 450px;
+            height: 400px;
+            margin-bottom: 10px;
+            float: left;
+        }
+        .inner .middle .middle02 .middle02-1 .middle02-1-1 .middle02-1-1-1{
+            width: 450px;
+            height: 240px;
+            background: rgb(59, 59, 226);
+            margin-bottom: 10px;
+        }
+        .inner .middle .middle02 .middle02-1 .middle02-1-1 .middle02-1-1-2{
+            width: 450px;
+            height: 110px;
+            margin-bottom: 10px;
+            background: rgb(59, 59, 226);
+        }
+        .inner .middle .middle02 .middle02-1 .middle02-1-1 .middle02-1-1-3{
+            width: 450px;
+            height: 30px;
+            background: rgb(59, 59, 226);
+        }
+        .inner .middle .middle02 .middle02-1 .middle02-1-2{
+            width: 190px;
+            height: 400px;
+            margin-bottom: 10px;
+            float: right;
+            background: palevioletred;
+        }
+        .inner .middle .middle02 .middle02-2{
+            height: 25px;
+            width: 650px;
+            margin-top: 10px;
+            background: rgb(0, 83, 0);
+        }
+        .inner .middle .middle02 .middle02-3{
+            height: 400px;
+            width: 190px;
+
+
+            background: pink;
+        }
+        .inner .footer{
+            height: 35px;
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="inner">
+        <div class="top">
+            <div class="logo01"></div>
+            <div class="logo02">
+                <div class="logo02-1"></div>
+                <div class="logo02-2"></div>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="middle01"></div>
+            <div class="middle02">
+                <div class="middle02-1">
+                    <div class="middle02-1-1">
+                        <div class="middle02-1-1-1"></div>
+                        <div class="middle02-1-1-2"></div>
+                        <div class="middle02-1-1-3"></div>
+                    </div>
+                    <div class="middle02-1-2"></div>
+                </div>
+                <div class="middle02-2"></div>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
+$$
+
+
+![image-20220512154941902](CSS基础/image-20220512154941902.png)
+
+
+
+### 1、浮动的性质
+
+标准流元素是区分行、块
 
