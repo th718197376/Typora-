@@ -1566,5 +1566,42 @@ $$
 
 ### 1、浮动的性质
 
-标准流元素是区分行、块
+标准流元素是区分行内元素、块级元素
+浮动元素是脱离标准流的，那么脱离标准流后，浮动元素有哪些特性
+浮动元素脱离标准流后，既可以设置宽高，也可以实现并排显示，不区分元素状态，也就是不区分行内元素和块级元素
+
+```html
+div p{
+	width: 100px;
+	height: 100px;
+	backgtound: purple;
+}
+div span{
+	width: 100px;
+	height: 100px;
+	backgtound:	orange;
+}
+```
+
+p标签和span标签都设置了宽高，但是由于元素类型的限制，span标签没有宽高
+
+div内部元素设置浮动后
+
+```
+div p{
+	width: 100px;
+	height: 100px;
+	backgtound: purple;
+	float:left;
+}
+div span{
+	width: 100px;
+	height: 100px;
+	backgtound:	orange;
+	float:left;
+}
+```
+
+注：兄弟元素如果有一个浮动，剩下的必须都要添加浮动
+如果p标签与span标签都没有设置宽高，元素的宽度会被内容成款，不会自动撑满父盒子
 
